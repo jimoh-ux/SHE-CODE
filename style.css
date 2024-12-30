@@ -1,0 +1,154 @@
+body {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    
+}
+
+/****************HEADER*********************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #008;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+header .mylogo {
+    width: 20px;
+    height: 20px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header nav ul li a {
+    background-color: #008050;
+    color: white;
+    border-radius: 5px;
+}
+/*************************MAIN***********************/
+
+#h1{
+font-size: 50px;
+font-weight: 400;
+}
+
+h2{
+    font-size: 30px;
+    color: #008050;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+.home {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding: 100px 32px;
+    background-image: url(Images/tech.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.about .myprojects, .myContact {
+    padding: 48px 32px;
+    text-align: center;
+}
+
+.myprojects-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+}
+.mycontact form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin:0 auto;
+}
+.mycontact form label {
+    text-align: left;
+}
+.mycontact form input, .mycontact form textarea, .mycontact form button {
+    padding: 8px;
+    border: 1px solid #008050;
+    border-radius: 5px;
+    outline: none;
+}
+.contact form input{
+    height: 40px;
+}
+
+.contact form input{
+    height: 40px;
+    font-size: 20px;
+    background-color: #008050;
+    color: white;
+    cursor: pointer;
+}
+.contact form button:hover{
+    background-color: white;
+    color: #008050;
+}
+
+/********************FOOTER*************************************/
+footer .follow a:hover {
+    color: rgb(65, 207, 212);
+    margin: 0 8px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* **************************Media Queries*********************************** */
+@media(max-width:768px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+header nav ul li a {
+    width: 100%;
+    text-align: left;
+}
+
+.home {
+    padding: 48px 16px;
+}
+
+.about .myprojects .myContact{
+    header nav ul{
+        padding: 0;
+    }
+    @media(max-width:480px){
+
+    }
+    .home {
+        padding: 32px 16px;
+    }
+}
